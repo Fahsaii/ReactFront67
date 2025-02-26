@@ -1,16 +1,17 @@
-const Hello = ({message, name}) =>{
-    console.log({message, name});
+import PropTypes from 'prop-types';
+
+const Hello = ({ message, name }) => {
+    console.log({ message, name });
     return (
         <div>
-            <hi>
+            <h1>
                 {message} {name}
-            </hi>
+            </h1>
         </div>
     );
 };
-import PropTypes from 'prop-types';
 
-Hello.propType = {
+Hello.propTypes = {
     message: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
 };

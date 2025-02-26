@@ -1,5 +1,5 @@
 import Contact from './assets/Contact';
-
+import Counter from './assets/Counter';
 import Hello from './assets/Hello';
 
 function App() {
@@ -9,7 +9,8 @@ function App() {
   ];
 
   return (
-    <div>
+    <div className='App'>
+      < Counter/>
       {helloData.map((data, index) => (
         <Hello key={index} name={data.name} message={data.message}/>
       ))}
@@ -17,6 +18,6 @@ function App() {
       <Contact email="Fahsai.tpd@gmail.com" phone ="0952952241"/>
     </div>
   );
-};
+}
 
 export default App;
